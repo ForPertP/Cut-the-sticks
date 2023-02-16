@@ -4,7 +4,7 @@ vector<int> cutTheSticks(vector<int> arr)
     std::map<int, int> mp;
     int count = arr.size();
 
-    for (auto n : arr)
+    for (const auto &n : arr)
     {
         mp[n]++;
     }
