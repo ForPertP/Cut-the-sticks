@@ -23,7 +23,7 @@ vector<int> cutTheSticks0(vector<int> arr)
     std::vector<int> result;
     std::map<int, int> mp;
     
-    for (const auto n : arr)
+    for (const auto &n : arr)
     {
         const auto ret = mp.insert({n, 1});
         if (ret.second == false)
